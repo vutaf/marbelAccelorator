@@ -619,6 +619,10 @@
     [
       "6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5",
       "coil driver"
+    ],
+    [
+      "b76a0d8c-a338-4440-bffc-7d4bb77cf8a3",
+      "power"
     ]
   ],
   "text_variables": {}

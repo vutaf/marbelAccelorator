@@ -2154,7 +2154,7 @@
 		)
 		(uuid "fefd5fa6-888c-4d30-b4e5-8d36e7cd215e")
 	)
-	(hierarchical_label "IN_SECOND_COIL"
+	(hierarchical_label "IN_COIL1"
 		(shape input)
 		(at 83.82 80.01 180)
 		(effects
@@ -2198,7 +2198,7 @@
 		)
 		(uuid "ac936ab4-fc53-4684-b976-f5c4279418b0")
 	)
-	(hierarchical_label "IN_FIRST_COIL"
+	(hierarchical_label "IN_COIL0"
 		(shape input)
 		(at 83.82 74.93 180)
 		(effects
