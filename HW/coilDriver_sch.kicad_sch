@@ -2248,7 +2248,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 93.98 86.36 0)
 			(effects
 				(font
@@ -2384,7 +2384,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 191.77 114.3 0)
 			(effects
 				(font
@@ -2607,7 +2607,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 157.48 107.95 0)
 			(effects
 				(font
@@ -2936,7 +2936,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AO4892"
+		(property "Value" "DMTH6016LSD-13"
 			(at 177.8 109.2199 0)
 			(effects
 				(font
@@ -3168,7 +3168,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 102.87 86.36 0)
 			(effects
 				(font
@@ -3295,7 +3295,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AO4892"
+		(property "Value" "DMTH6016LSD-13"
 			(at 177.8 62.2299 0)
 			(effects
 				(font
@@ -3546,7 +3546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 191.77 59.69 0)
 			(effects
 				(font
@@ -3613,7 +3613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 191.77 107.95 0)
 			(effects
 				(font
@@ -3674,7 +3674,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SMAJ24CA"
+		(property "Value" "SMBJ24CA"
 			(at 176.53 49.5299 90)
 			(effects
 				(font
@@ -3683,7 +3683,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 179.07 48.26 0)
 			(effects
 				(font
@@ -3726,6 +3726,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 191.77 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2e6353d-099c-4c6e-9667-07041187b926")
+		(property "Reference" "C3"
+			(at 194.31 64.7762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 194.31 67.3162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 191.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b4384e1-0e6d-4cff-ab05-3285d30c76c5")
+		)
+		(pin "2"
+			(uuid "7ff9d656-2b26-40aa-a66a-a930a801b514")
+		)
+		(instances
+			(project "marble_accelerator"
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 157.48 60.96 90)
 		(unit 1)
@@ -3750,7 +3820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 157.48 60.96 0)
 			(effects
 				(font
@@ -3811,7 +3881,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SMAJ24CA"
+		(property "Value" "SMBJ24CA"
 			(at 176.53 97.7899 90)
 			(effects
 				(font
@@ -3820,7 +3890,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 179.07 96.52 0)
 			(effects
 				(font
@@ -3838,7 +3908,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "400W bidirectional Transient Voltage Suppressor, 24.0Vr, SMA(DO-214AC)"
+		(property "Description" "600W bidirectional Transient Voltage Suppressor, 24.0Vr, SMB(DO-214AA)"
 			(at 173.99 96.52 0)
 			(effects
 				(font
@@ -4079,76 +4149,6 @@
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 191.77 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fa6518b5-73c4-429e-a45e-f8184a785213")
-		(property "Reference" "C3"
-			(at 194.31 64.7762 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1µF"
-			(at 194.31 67.3162 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 191.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 191.77 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1b3691ef-f316-4052-ba15-933517624c25")
-		)
-		(pin "2"
-			(uuid "4b7dd233-3bfe-4293-917c-78df90cf7087")
-		)
-		(instances
-			(project "marble_accelerator"
-				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "C3")
 					(unit 1)
 				)
 			)
