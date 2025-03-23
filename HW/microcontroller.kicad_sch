@@ -2469,6 +2469,12 @@
 		(uuid "3696afd2-409e-4d42-9794-2cfc87c5f541")
 	)
 	(junction
+		(at 80.01 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3dbddd01-9f71-460c-b819-8f53f8897e58")
+	)
+	(junction
 		(at 173.99 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2493,10 +2499,20 @@
 		(uuid "e1161ee7-6d91-44a0-b0a8-b118d2e46f7c")
 	)
 	(junction
-		(at 81.28 60.96)
+		(at 69.85 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7083edf-92d8-425b-a998-e644c6768529")
+	)
+	(wire
+		(pts
+			(xy 80.01 69.85) (xy 80.01 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "033d4113-768c-43d0-9656-0e3c3486692d")
 	)
 	(wire
 		(pts
@@ -2520,7 +2536,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 68.58) (xy 81.28 72.39)
+			(xy 69.85 68.58) (xy 69.85 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2610,7 +2626,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 52.07) (xy 81.28 60.96)
+			(xy 69.85 52.07) (xy 69.85 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2770,6 +2786,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 60.96) (xy 101.6 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "614a2c06-6961-4628-be82-2197559f25bd")
+	)
+	(wire
+		(pts
 			(xy 128.27 36.83) (xy 137.16 36.83)
 		)
 		(stroke
@@ -2800,7 +2826,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 44.45) (xy 81.28 46.99)
+			(xy 69.85 44.45) (xy 69.85 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2837,6 +2863,16 @@
 			(type default)
 		)
 		(uuid "781d56f5-936e-424e-80a3-e120050c93e2")
+	)
+	(wire
+		(pts
+			(xy 80.01 60.96) (xy 80.01 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7df853c1-b41d-4c0f-990e-44a0359244b7")
 	)
 	(wire
 		(pts
@@ -2910,7 +2946,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 60.96) (xy 81.28 63.5)
+			(xy 69.85 60.96) (xy 69.85 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2940,7 +2976,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 60.96) (xy 101.6 60.96)
+			(xy 69.85 60.96) (xy 80.01 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3522,7 +3558,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 81.28 66.04 0)
+		(at 69.85 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3531,7 +3567,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ba87842-c180-4ff7-8b83-ab06760f5b26")
 		(property "Reference" "R17"
-			(at 83.82 64.7699 0)
+			(at 72.39 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3540,7 +3576,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 83.82 67.3099 0)
+			(at 72.39 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3549,7 +3585,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 81.28 66.04 0)
+			(at 69.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3558,7 +3594,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 66.04 0)
+			(at 69.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3567,7 +3603,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 81.28 66.04 0)
+			(at 69.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,7 +3628,7 @@
 	)
 	(symbol
 		(lib_id "power:Vdrive")
-		(at 81.28 44.45 0)
+		(at 69.85 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3601,7 +3637,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d0871e5-a8b7-4b2b-966f-3bcd73c8aa92")
 		(property "Reference" "#PWR050"
-			(at 81.28 48.26 0)
+			(at 69.85 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3610,7 +3646,7 @@
 			)
 		)
 		(property "Value" "Vdrive"
-			(at 81.28 39.37 0)
+			(at 69.85 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3618,7 +3654,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 44.45 0)
+			(at 69.85 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3627,7 +3663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 44.45 0)
+			(at 69.85 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3636,7 +3672,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Vdrive\""
-			(at 81.28 44.45 0)
+			(at 69.85 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3658,7 +3694,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 72.39 0)
+		(at 69.85 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3667,7 +3703,7 @@
 		(fields_autoplaced yes)
 		(uuid "32baa911-1d79-423f-9212-65cfc251ea12")
 		(property "Reference" "#PWR049"
-			(at 81.28 78.74 0)
+			(at 69.85 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3676,7 +3712,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 77.47 0)
+			(at 69.85 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3684,7 +3720,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 72.39 0)
+			(at 69.85 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +3729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 72.39 0)
+			(at 69.85 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3702,7 +3738,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 72.39 0)
+			(at 69.85 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3931,6 +3967,72 @@
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/dfbdab4c-3176-4efa-832c-7a2279114595"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56ae9c49-e8f2-40b4-91a7-8ad5bceb1ba7")
+		(property "Reference" "#PWR051"
+			(at 80.01 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66e57de1-7131-4c84-b899-d35d872ad1ee")
+		)
+		(instances
+			(project "marble_accelerator"
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/dfbdab4c-3176-4efa-832c-7a2279114595"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -4909,6 +5011,76 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 80.01 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab04c2a4-2730-47cd-9174-a0140d81e76f")
+		(property "Reference" "C14"
+			(at 82.55 66.0462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 82.55 68.5862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 80.01 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 80.01 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b657b0aa-a261-41d8-8b66-992496a09cc3")
+		)
+		(pin "1"
+			(uuid "a8de4865-3c74-41a5-b2e0-ae02810dd95b")
+		)
+		(instances
+			(project "marble_accelerator"
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/dfbdab4c-3176-4efa-832c-7a2279114595"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 95.25 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5812,7 +5984,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 81.28 49.53 0)
+		(at 69.85 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5821,7 +5993,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd306ccf-f840-47ee-811d-09479381d538")
 		(property "Reference" "R16"
-			(at 83.82 48.2599 0)
+			(at 72.39 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5830,7 +6002,7 @@
 			)
 		)
 		(property "Value" "30k"
-			(at 83.82 50.7999 0)
+			(at 72.39 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5839,7 +6011,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 81.28 49.53 0)
+			(at 69.85 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5848,7 +6020,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 49.53 0)
+			(at 69.85 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5857,7 +6029,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 81.28 49.53 0)
+			(at 69.85 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
