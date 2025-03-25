@@ -1738,7 +1738,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 106.68) (xy 137.16 106.68)
+			(xy 109.22 106.68) (xy 120.65 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1928,6 +1928,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 88.9) (xy 137.16 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cab678d-db02-49db-b511-dcb76e6e3914")
+	)
+	(wire
+		(pts
 			(xy 80.01 58.42) (xy 64.77 58.42)
 		)
 		(stroke
@@ -1978,7 +1988,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 88.9) (xy 137.16 88.9)
+			(xy 109.22 88.9) (xy 120.65 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2045,6 +2055,16 @@
 			(type default)
 		)
 		(uuid "b3e75b43-2ae5-4e06-a844-ed598fd3a717")
+	)
+	(wire
+		(pts
+			(xy 125.73 106.68) (xy 137.16 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ca1407-cd78-4298-9d2a-883420a35986")
 	)
 	(wire
 		(pts
@@ -2378,6 +2398,74 @@
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71"
 					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 123.19 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bad5934-f5c9-480a-ab06-1318c7865878")
+		(property "Reference" "R20"
+			(at 123.19 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 123.19 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 123.19 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 123.19 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6982d6e3-af75-423a-9da1-2c24881a42bb")
+		)
+		(pin "1"
+			(uuid "e185cc76-6d69-457a-9375-af27e40e7b15")
+		)
+		(instances
+			(project "marble_accelerator"
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71"
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -3197,6 +3285,74 @@
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 123.19 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aff0d559-6b42-4a2b-8594-69e5450d27b1")
+		(property "Reference" "R19"
+			(at 123.19 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 123.19 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 123.19 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 123.19 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "65289a09-6d57-426f-9343-da9420849ae5")
+		)
+		(pin "1"
+			(uuid "aaa8c06b-c364-419f-a9a3-013163ba73a9")
+		)
+		(instances
+			(project "marble_accelerator"
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71"
+					(reference "R19")
 					(unit 1)
 				)
 			)

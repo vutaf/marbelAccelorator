@@ -1066,146 +1066,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:MCP1703Ax-500xxMB"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MCP1703Ax-500xxMB"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Low Quiescent Current LDO Regulator, 5.0V, 250mA, Vin<=16V, SOT-89"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "REGULATOR LDO"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?89*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MCP1703Ax-500xxMB_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "MCP1703Ax-500xxMB_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -1708,10 +1568,28 @@
 		(uuid "2ab6b921-54e2-45dc-a0a2-258c40e2ec98")
 	)
 	(junction
+		(at 119.38 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56f4d8ed-7d1e-4361-aa8f-16b25a414d95")
+	)
+	(junction
+		(at 142.24 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c49f36d-3a2f-4d97-b76b-59a2eb82b381")
+	)
+	(junction
 		(at 175.26 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ea1d2ed-9685-4773-93cd-5a07dc6fea5d")
+	)
+	(junction
+		(at 185.42 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf0e31a2-c774-4935-b509-60ab18573af1")
 	)
 	(junction
 		(at 179.07 86.36)
@@ -1737,6 +1615,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 86.36) (xy 144.78 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e404ac4-2da2-4fbe-a196-b50f1c7b8c5d")
+	)
+	(wire
+		(pts
 			(xy 146.05 96.52) (xy 146.05 105.41)
 		)
 		(stroke
@@ -1744,6 +1632,36 @@
 			(type default)
 		)
 		(uuid "0f81f4d0-8a3f-4e8c-b1d3-6324a8c11785")
+	)
+	(wire
+		(pts
+			(xy 142.24 76.2) (xy 142.24 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15478b06-72bd-4e6a-b282-f73b8de448ec")
+	)
+	(wire
+		(pts
+			(xy 132.08 76.2) (xy 142.24 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1acf0b41-0110-4470-97e3-28057237a45d")
+	)
+	(wire
+		(pts
+			(xy 127 76.2) (xy 119.38 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be664fd-de7a-45b7-beb8-21a54a6cd98e")
 	)
 	(wire
 		(pts
@@ -1757,7 +1675,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 86.36) (xy 179.07 86.36)
+			(xy 187.96 86.36) (xy 185.42 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1777,6 +1695,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 86.36) (xy 179.07 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "373351c6-d7ac-4109-8f1b-6ccffd431e26")
+	)
+	(wire
+		(pts
 			(xy 199.39 105.41) (xy 199.39 93.98)
 		)
 		(stroke
@@ -1787,7 +1715,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 144.78 86.36)
+			(xy 139.7 86.36) (xy 142.24 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1814,6 +1742,16 @@
 			(type default)
 		)
 		(uuid "506cad36-c7e4-452d-b3c9-b07b5a7ddc2b")
+	)
+	(wire
+		(pts
+			(xy 185.42 95.25) (xy 185.42 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b36ea61-16ef-43c6-aff8-499978a8d092")
 	)
 	(wire
 		(pts
@@ -1897,6 +1835,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 86.36) (xy 185.42 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3967e24-6264-469f-89ff-be7758c34896")
+	)
+	(wire
+		(pts
 			(xy 129.54 93.98) (xy 129.54 104.14)
 		)
 		(stroke
@@ -1914,6 +1862,16 @@
 			(type default)
 		)
 		(uuid "a80b7678-3d6c-4dc7-8649-fdcf1a27fa81")
+	)
+	(wire
+		(pts
+			(xy 119.38 86.36) (xy 121.92 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac76a6e2-bbc2-4330-a8c5-50312f797425")
 	)
 	(wire
 		(pts
@@ -1987,6 +1945,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 76.2) (xy 119.38 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4cc8dc7-144d-41aa-8e46-d64642f9bbc8")
+	)
+	(wire
+		(pts
 			(xy 115.57 99.06) (xy 115.57 104.14)
 		)
 		(stroke
@@ -2017,7 +1985,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 86.36) (xy 121.92 86.36)
+			(xy 115.57 86.36) (xy 119.38 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2248,77 +2216,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:MCP1703Ax-500xxMB")
-		(at 222.25 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "279f4a84-cb7b-41ef-b417-90f7e5af3ca5")
-		(property "Reference" "U9"
-			(at 222.25 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP1703Ax-500xxMB"
-			(at 222.25 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-			(at 222.25 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
-			(at 222.25 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low Quiescent Current LDO Regulator, 5.0V, 250mA, Vin<=16V, SOT-89"
-			(at 222.25 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "48594881-ce20-47cd-9ed4-d3d9281f5ae0")
-		)
-		(pin "2"
-			(uuid "98b5806e-8384-4058-b16d-856f9e3dc7d0")
-		)
-		(pin "1"
-			(uuid "98274a85-835a-4964-beb3-223724e7f59c")
-		)
-		(instances
-			(project ""
-				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/b76a0d8c-a338-4440-bffc-7d4bb77cf8a3"
-					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 146.05 93.98 0)
 		(unit 1)
@@ -2449,6 +2346,76 @@
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/b76a0d8c-a338-4440-bffc-7d4bb77cf8a3"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 185.42 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4aa4cd0f-ced7-411f-a4dd-45bd7fc25fad")
+		(property "Reference" "C14"
+			(at 187.96 90.8938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100µF/25V"
+			(at 187.96 93.4338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4328b326-e59f-49de-874e-3842669ddfc3")
+		)
+		(pin "2"
+			(uuid "fe92844b-be9f-4d57-981b-7a52665c0b57")
+		)
+		(instances
+			(project ""
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/b76a0d8c-a338-4440-bffc-7d4bb77cf8a3"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -3481,6 +3448,73 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 129.54 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e89ca38e-9615-4b66-a507-b1f772d542ac")
+		(property "Reference" "R18"
+			(at 128.778 74.168 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 129.54 78.232 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 129.54 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 129.54 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6d59c896-4532-42d0-a38e-841f41b190c2")
+		)
+		(pin "1"
+			(uuid "37cb9e32-85ca-4885-bd52-d6e03e5511fb")
+		)
+		(instances
+			(project "marble_accelerator"
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/b76a0d8c-a338-4440-bffc-7d4bb77cf8a3"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 199.39 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3544,6 +3578,72 @@
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/b76a0d8c-a338-4440-bffc-7d4bb77cf8a3"
 					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f28ee2f1-9741-49cd-8190-275f9d02d349")
+		(property "Reference" "#PWR051"
+			(at 185.42 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "554844d0-323d-46bf-b1ff-2c1b9f3fd091")
+		)
+		(instances
+			(project "marble_accelerator"
+				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/b76a0d8c-a338-4440-bffc-7d4bb77cf8a3"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
