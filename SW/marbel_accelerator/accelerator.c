@@ -28,9 +28,10 @@
 #define NUMBER_OFF_COILS    2
 #define MAX_ACTIVE_TIME_COIL0_MS  800
 #define MAX_ACTIVE_TIME_COIL1_MS  200
-#define DELAY_BETWEEN_TWO_COILS_MS 2
+#define DELAY_BETWEEN_TWO_COILS_MS 2    //delay in ms between deactivation of coil0 and activation of coil1,
+                                        //to ensure undisturbed measurement of no field voltage on coil1
 #define DEFAULT_NO_FIELD_DIGITS 511
-#define ACTIVATION_THRESHOLD    512     //Threshold on trigger input
+#define ACTIVATION_THRESHOLD    512     //Threshold on trigger input -> ~2,5V
 #define ADC_BUFFER_SIZE 4   //max 64, otherwise there will occur overflow
 
 #define ACCELERATOR_TIMER_COMPARE_VALUE 200 //in combination with 2Mhz Timer ->10kHz samplefrequenz
@@ -38,7 +39,6 @@
 #define MINABRRUCH 180
 #define THRESHOLD 2
 
-#define TICKS_ABRUCH    700 //->70ms
 
 
 typedef enum {
