@@ -2068,7 +2068,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ca70883-6d67-453d-81ba-aad4768af988")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR030"
 			(at 173.99 43.18 0)
 			(effects
 				(font
@@ -2118,7 +2118,7 @@
 		(instances
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR029")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -2134,7 +2134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10749bff-f68f-414f-a8e4-9011ad96a322")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 201.93 113.0362 0)
 			(effects
 				(font
@@ -2188,7 +2188,7 @@
 		(instances
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -2204,7 +2204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17913f1f-c16f-4699-bf99-c171f637e825")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR038"
 			(at 121.92 100.33 0)
 			(effects
 				(font
@@ -2254,7 +2254,7 @@
 		(instances
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR037")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -2337,7 +2337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24483ad4-e06a-427e-9c72-79d42ea4878f")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR035"
 			(at 173.99 88.9 0)
 			(effects
 				(font
@@ -2387,7 +2387,7 @@
 		(instances
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR034")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -2403,7 +2403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2466ecea-5327-4054-82eb-e974cebe63c4")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 113.03 58.4262 0)
 			(effects
 				(font
@@ -2457,7 +2457,7 @@
 		(instances
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -2473,7 +2473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33867019-bd91-47a6-878e-d3769a99e38b")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR040"
 			(at 199.39 124.46 0)
 			(effects
 				(font
@@ -2523,7 +2523,7 @@
 		(instances
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR039")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -2539,7 +2539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ae0151d-50ec-4529-bd6f-f777ca938a93")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR039"
 			(at 173.99 124.46 0)
 			(effects
 				(font
@@ -2589,7 +2589,7 @@
 		(instances
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR038")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -2696,7 +2696,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54ea6be6-b74e-49d5-9fd0-3f654d739042")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR036"
 			(at 93.98 100.33 0)
 			(effects
 				(font
@@ -2746,7 +2746,7 @@
 		(instances
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR035")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -2762,7 +2762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "560cfe8d-c2bd-4955-9ac9-ac40a33c47b6")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR034"
 			(at 199.39 76.2 0)
 			(effects
 				(font
@@ -2812,7 +2812,7 @@
 		(instances
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR033")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -2898,7 +2898,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7481f56b-695a-4aab-b58a-b47ee2d05971")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR033"
 			(at 173.99 76.2 0)
 			(effects
 				(font
@@ -2948,7 +2948,7 @@
 		(instances
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR032")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3055,7 +3055,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83b6f81f-1e5a-4803-a500-099925a25755")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR032"
 			(at 110.49 71.12 0)
 			(effects
 				(font
@@ -3105,7 +3105,7 @@
 		(instances
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR031")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -3413,7 +3413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2e6353d-099c-4c6e-9667-07041187b926")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 201.93 64.7762 0)
 			(effects
 				(font
@@ -3467,7 +3467,7 @@
 		(instances
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -3620,7 +3620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0d13d8d-708e-432d-b5d8-ddf168bb39bc")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR031"
 			(at 121.92 57.15 0)
 			(effects
 				(font
@@ -3670,7 +3670,7 @@
 		(instances
 			(project ""
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR030")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -3686,7 +3686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec422961-968e-43f1-b566-429998e85fbb")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR037"
 			(at 102.87 100.33 0)
 			(effects
 				(font
@@ -3736,7 +3736,7 @@
 		(instances
 			(project "marble_accelerator"
 				(path "/338fb3bb-e550-4c92-aa76-5d93a75fae71/6775c7a4-de2e-4cb3-9e2b-2f99b07eb7c5"
-					(reference "#PWR036")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
