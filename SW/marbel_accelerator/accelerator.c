@@ -4,15 +4,17 @@
  */
 
 /*
- * Config: Hallsensor 0 on PA4
- *         Hallsensor 1 on PA5
- *         CNY70 on PA1
- *         switch on PC0
- *         led on PB4
- *         coil 0 on PB1
- *         coil 1 on PB2
+ * Config: Hallsensor 0 on ADC7 (no GPIO)
+ *         Hallsensor 1 on PC0
+ *         CNY70 on PC1
+ *         CNY70 enable on PD5 (COM0B)
+ *         switch on PC0    -> removed
+ *         led1 on PD6
+ *         led2 on PD7
+ *         coil 0 on PC3
+ *         coil 1 on PC2
  *         debug pin on PD3
- *         debug pin2 on PD5
+ *         debug pin2 on PD4
 */
 #include <avr/interrupt.h>
 #include <stddef.h>
@@ -103,8 +105,11 @@ static void initFieldMeasurementAndTimeout(void);
 
 bool accelerator_getSwitchState(void);
 
-void accelerator_setLed(void);
-void accelerator_clrLed(void);
+void accelerator_setLed1(void);
+void accelerator_clrLed1(void);
+
+void accelerator_setLed2(void);
+void accelerator_clrLed2(void);
 
 //attention: designed for handling of 10Bit adc values
 void ringbuffer_setValue(uint16_t data);
@@ -184,28 +189,29 @@ void accelerator_init(void)
     handle.coilVoltages[1].maxAccField = 190;   //measured max field: 200
     handle.activeCoil = 0;
     handle.accCycleFinished = false;
-    handle.adcChannelHall[0] = 4;
-    handle.adcChannelHall[1] = 5;
+    handle.adcChannelHall[0] = 7;
+    handle.adcChannelHall[1] = 0;
     handle.adcChannelTrigger = 1;
     uart_send_P("Acc init\n");
 
-    DDRB |= (1<<PINB4);        //set led pin as output
-    DDRB |= (1<<PINB1);        //set coil0 pin as output
-    DDRB |= (1<<PINB2);        //set coil1 pin as output
+
+    DDRD |= (1<<PIND6);        //set led1 pin as output
+    DDRD |= (1<<PIND7);        //set led2 pin as output
+
+    DDRC |= (1<<PINC3);        //set coil0 pin as output
+    DDRC |= (1<<PINC2);        //set coil1 pin as output
     DDRD |= (1<<PIND3);        //set debug pin as output
     debugPin_clr();
-    DDRD |= (1<<PIND5);        //set debug pin2 as output
+    DDRD |= (1<<PIND4);        //set debug pin2 as output
     debugPin2_clr();
-    DDRC &= ~(1<<PINC0);    //set switch pin as input without pullup
 
-    DDRA &= ~(1<<PINA4);    //set hall sensor pin to input (should be default)
-    DIDR0 |= (1<<ADC4D);    //deactivate digital buffer on PA4
+    //set hall sensor 0 pin is only analog, so nothing to do
 
-    DDRA &= ~(1<<PINA5);    //set hall sensor pin to input (should be default)
-    DIDR0 |= (1<<ADC5D);    //deactivate digital buffer on PA5
+    DDRC &= ~(1<<PINC0);    //set hall sensor 1 pin to input (should be default)
+    DIDR0 |= (1<<ADC0D);    //deactivate digital buffer on PC0
 
-    DDRA &= ~(1<<PINA1);    //set CNY70 pin to input (should be default)
-    DIDR0 |= (1<<ADC1D);    //deactivate digital buffer on PA3
+    DDRC &= ~(1<<PINC1);    //set CNY70 pin to input (should be default)
+    DIDR0 |= (1<<ADC1D);    //deactivate digital buffer on PC1
 
     initAcceleratorTimer();
 
@@ -228,14 +234,24 @@ bool accelerator_getSwitchState(void)
     }
 }
 
-void accelerator_setLed(void)
+void accelerator_setLed1(void)
 {
-    PORTB |= (1<<PINB4);
+    PORTD |= (1<<PIND6);
 }
 
-void accelerator_clrLed(void)
+void accelerator_clrLed1(void)
 {
-    PORTB &= ~(1<<PINB4);
+    PORTD &= ~(1<<PIND6);
+}
+
+void accelerator_setLed2(void)
+{
+    PORTD |= (1<<PIND7);
+}
+
+void accelerator_clrLed2(void)
+{
+    PORTD &= ~(1<<PIND7);
 }
 
 char charBuffer[7];
@@ -248,7 +264,7 @@ void accelerator_task(void)
         if ((true == handle.accCycleFinished) || (true == accelerator_getSwitchState()))
         {
             debugPin_set();
-            accelerator_setLed();
+            accelerator_setLed1();
             handle.activeCoil = 0;
             //measure current no field voltage for first coil
             initFieldMeasurementAndTimeout();
@@ -306,7 +322,7 @@ void accelerator_task(void)
             handle.activeCoil = 0;
             handle.currentState = ACCELERATOR_WAIT_FOR_MARBEL;
             debugPin_clr();
-            accelerator_clrLed();
+            accelerator_clrLed1();
             uart_send_P("End second Coil\n");
             uart_send_P("MaxF1: ");
             utoa(maxField, charBuffer, 10);
@@ -331,22 +347,22 @@ void accelerator_task(void)
 
 static inline void activateCoil0(void)
 {
-    PORTB |= (1<<PINB1);
+    PORTC |= (1<<PINC3);
 }
 
 static inline void deactivateCoil0(void)
 {
-    PORTB &= ~(1<<PINB1);
+    PORTC &= ~(1<<PINC3);
 }
 
 static inline void activateCoil1(void)
 {
-    PORTB |= (1<<PINB2);
+    PORTC |= (1<<PINC2);
 }
 
 static inline void deactivateCoil1(void)
 {
-    PORTB &= ~(1<<PINB2);
+    PORTC &= ~(1<<PINC2);
 }
 
 static inline void deactivateCurrentCoil(void)
@@ -419,7 +435,7 @@ static void resetStateMachine(void)
     deactivateAdcInt();
 
     debugPin_clr();
-    accelerator_clrLed();
+    accelerator_clrLed1();
 
     uart_send_P("Timeout Coil: ");
     uart_send_byte('0'+ handle.activeCoil);
@@ -459,17 +475,17 @@ inline static void debugPin_tog(void)
 
 inline static void debugPin2_set(void)
 {
-    PORTD |= (1<<PIND5);
+    PORTD |= (1<<PIND4);
 }
 
 inline static void debugPin2_clr(void)
 {
-    PORTD &= ~(1<<PIND5);
+    PORTD &= ~(1<<PIND4);
 }
 
 inline static void debugPin2_tog(void)
 {
-    PORTD ^= (1<<PIND5);
+    PORTD ^= (1<<PIND4);
 }
 
 void ringbuffer_setValue(uint16_t data)

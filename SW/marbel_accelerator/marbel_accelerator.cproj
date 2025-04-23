@@ -5,7 +5,7 @@
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
     <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
-    <avrdevice>ATmega324P</avrdevice>
+    <avrdevice>ATmega88A</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
     <Language>C</Language>
@@ -30,21 +30,21 @@
     <EraseKey />
     <avrtool>com.atmel.avrdbg.tool.avrdragon</avrtool>
     <avrtoolserialnumber>00A2000074D0</avrtoolserialnumber>
-    <avrdeviceexpectedsignature>0x1E9508</avrdeviceexpectedsignature>
+    <avrdeviceexpectedsignature>0x1E930A</avrdeviceexpectedsignature>
     <com_atmel_avrdbg_tool_avrdragon>
       <ToolOptions>
         <InterfaceProperties>
-          <IspClock>1000000</IspClock>
-          <JtagDbgClock>200000</JtagDbgClock>
+          <IspClock>125000</IspClock>
+          <JtagDbgClock>0</JtagDbgClock>
         </InterfaceProperties>
-        <InterfaceName>JTAG</InterfaceName>
+        <InterfaceName>ISP</InterfaceName>
       </ToolOptions>
       <ToolType>com.atmel.avrdbg.tool.avrdragon</ToolType>
       <ToolNumber>00A2000074D0</ToolNumber>
       <ToolName>AVR Dragon</ToolName>
     </com_atmel_avrdbg_tool_avrdragon>
-    <avrtoolinterface>JTAG</avrtoolinterface>
-    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
+    <avrtoolinterface>ISP</avrtoolinterface>
+    <avrtoolinterfaceclock>125000</avrtoolinterfaceclock>
     <com_atmel_avrdbg_tool_simulator>
       <ToolOptions xmlns="">
         <InterfaceProperties>
@@ -61,7 +61,7 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
       <AvrGcc>
-        <avrgcc.common.Device>-mmcu=atmega324p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega324p"</avrgcc.common.Device>
+        <avrgcc.common.Device>-mmcu=atmega88a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega88a"</avrgcc.common.Device>
         <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
         <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
         <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
@@ -99,7 +99,7 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <AvrGcc>
-        <avrgcc.common.Device>-mmcu=atmega324p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega324p"</avrgcc.common.Device>
+        <avrgcc.common.Device>-mmcu=atmega88a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega88a"</avrgcc.common.Device>
         <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
         <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
         <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>

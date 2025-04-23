@@ -121,11 +121,11 @@ TIMER_8BIT_COMP_ISR()
 
 void timer_init(void)
 {
+    systick = 0;
     timer_8bit_set_mode(ctcmode);
-    timer_8bit_set_prescaler(TIMER_PRESCALER);
     timer_8bit_set_comp_reg(TIMER_COMP_WERT);
     timer_8bit_enable_compint();
-    systick = 0;
+    timer_8bit_set_prescaler(TIMER_PRESCALER);
 }
 
 uint16_t timer_get_systicks_ms(void)

@@ -112,7 +112,7 @@ static inline void uart_set_baudrate_register(uint16_t regval)
 #define UART_TX_ISR()    ISR(USART0_UDRE_vect)
 #define UART_RX_ISR()    ISR(USART0_RX_vect)
 
-#elif defined(__AVR_ATmega168PA__) || defined(__AVR_ATmega328P__)
+#elif defined(__AVR_ATmega168PA__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega88A__)
 
 static inline void uart_config_set_8N1(void)        //8Bit, no Parity, 1Stopbit
     {UCSR0C |= ((1<<UCSZ01) | (1<<UCSZ00));}
